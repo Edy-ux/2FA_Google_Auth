@@ -6,13 +6,13 @@ namespace TwoFactorAuthAPI.Controllers;
 [ApiController]
 
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class TwoFactorController : ControllerBase
 {
 
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<TwoFactorController> _logger;
     private readonly TwoFactorAuthenticator _tfa;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public TwoFactorController(ILogger<TwoFactorController> logger)
     {
         _logger = logger;
         _tfa = new TwoFactorAuthenticator();
